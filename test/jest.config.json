@@ -1,0 +1,13 @@
+{
+  "rootDir": "../src",
+  "displayName": "end2end-tests",
+  "setupFilesAfterEnv": ["../test/jest.setup.ts"],
+  "testMatch": ["../test/**/*.test.ts"],
+  "testEnvironment": "node",
+  "clearMocks": true,
+  "preset": "ts-jest",
+  "moduleNameMapper": {
+    "@src/(.*)": "../src/$1",
+    "@test/(.*)": "../test/$1"
+  }
+}
